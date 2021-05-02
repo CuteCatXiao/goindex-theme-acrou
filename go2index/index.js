@@ -1,12 +1,12 @@
 // =======Options START=======
 var authConfig = {
-  siteName: "GoIndex-theme-acrou", // 网站名称
+  siteName: "小萌猫の御用动漫站", // 网站名称
   version: "1.1.2", // 程序版本
   theme: "acrou",
   // 强烈推荐使用自己的 client_id 和 client_secret
   client_id: "202264815644.apps.googleusercontent.com",
   client_secret: "X4Z3ca8xfWDb1Voo-F9a7ZxJ",
-  refresh_token: "", // 授权 token
+  refresh_token: "1//0dJLFFz9NUueUCgYIARAAGA0SNwF-L9IrxVgNzOc7QVbYMgZzhY3dARo77MDJSn4zXGG1tTFRn_C8Wn_QAgzTbJqyPrrvNWbsu1I", // 授权 token
   /**
    * 设置要显示的多个云端硬盘；按格式添加多个
    * [id]: 可以是 团队盘id、子文件夹id、或者"root"（代表个人盘根目录）；
@@ -20,25 +20,15 @@ var authConfig = {
    * 不需要 Basic Auth 的盘，保持 user 和 pass 同时为空即可。（直接不设置也可以）
    * 【注意】对于id设置为为子文件夹id的盘将不支持搜索功能（不影响其他盘）。
    */
-  roots: [
-    {
-      id: "",
-      name: "TeamDrive",
-      pass: "",
-    },
-    {
-      id: "root",
-      name: "PrivateDrive",
-      user: "",
-      pass: "",
-      protect_file_link: true,
-    },
-    {
-      id: "",
-      name: "folder1",
-      pass: "",
-    },
-  ],
+  "roots": [
+	{
+		"id": "root",
+		"name": "",
+		"user": "",
+		"pass": "",
+		"protect_file_link": false
+	}
+],
   default_gd: 0,
   /**
    * 文件列表页面每页显示的数量。【推荐设置值为 100 到 1000 之间】；
@@ -69,7 +59,7 @@ var themeOptions = {
   // 主题版本号
   version: "2.0.8",
   //可选默认系统语言:en/zh-chs/zh-cht
-  languages: "en",
+  languages: "zh-cht",
   render: {
     /**
      * 是否渲染HEAD.md文件
